@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../media/janken.gif);
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+
+.arrow {
+    width: 2vw;
+}
+
+.arrow:hover,
+.arrow:focus,
+.arrow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 0.3vw solid black;
+    border-radius: 1vw;
+    margin-top: 10%;
+    width: 75%;
+    padding: 1.5vw;
+}
+
+.Main h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.Main p {
+    display: flex;
+    justify-content: center;
+}

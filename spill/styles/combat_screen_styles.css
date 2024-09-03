@@ -1,0 +1,177 @@
+body {
+    background-image: url(../media/forest.jpg);
+    background-size: 100vw 102vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+
+.player {
+    display: flex;
+}
+
+.custom-health-bar {
+    position: absolute;
+    z-index: -1;
+    left: 56px;
+    top: 84px;
+}
+.custom-health-bar2 {
+    position: absolute;
+    z-index: -1;
+    right: 45px;
+    top: 98px;
+}
+.health-bar {
+    width: 20vw;
+    height: 3vh;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    z-index: 0;
+}
+
+.game {
+    text-align: center;
+    margin: 13vw;
+}
+
+.game h1 {
+    width: auto;
+    color: white;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.options button {
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10vw;
+
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.attack {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.player1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.player1 img {
+    width: 25vw;
+}
+
+.player2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.player2 img {
+    width: 25vw;
+    border: none;
+}
+
+.arrow {
+    width: 2vw;
+}
+
+.arrow:hover,
+.arrow:focus,
+.arrow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#rockIkon {
+    width: 4vw;
+}
+
+#death-video {
+    width: 100vw;
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#win-video {
+    width: 100vw;
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.damage-notification {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    font-weight: bolder;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.character-container {
+    position: relative;
+    display: inline-block; /* Ensure images are inline-block */
+}
+
+.damage-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make sure the GIF covers the character */
+    height: 100%; /* Make sure the GIF covers the character */
+    z-index: 1; /* Ensure it is on top of the character */
+}
+
+.character-container img {
+    display: block;
+}
+
+#player1-attack {
+    position: absolute;
+    bottom: 70px;
+}
+
+#player2-attack {
+    position: absolute;
+    bottom: 70px;
+}

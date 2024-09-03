@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../media/janken.gif);
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+
+
+
+.menuLinks {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-bottom: 20vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 8%;
+}
+
+a {
+    text-decoration: none;
+    color: #FF4F4F;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 2px solid #FF4F4F;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #FF4F4F;
+    color: #ffffff;
+}
+
+.janken {
+    display: flex;
+    margin-right: 55vw;
+    margin-bottom: 40vh;
+}
+
+.janken img {
+    width: 50vw;
+}
+
+
+
+.audio {
+    width: 0px;
+    height: 0px;
+}
+
+.arrow {
+    width: 2vw;
+}
+
+.arrow:hover,
+.arrow:focus,
+.arrow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

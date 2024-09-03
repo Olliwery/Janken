@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janken</title>
+    <link rel="stylesheet" href="../styles/combat_screen_styles.css">
+</head>
+
+<body>
+    <div class="back">
+        <a href="./menu.html"><img class="arrow" src="../media/arrowBack.svg" alt=""></a>
+    </div>
+    <div class="container">
+        <div class="player" id="player1">
+            <div class="player1">
+                <div class="health-bar-container">
+                    <img src="../media/healthbar.png" class="custom-health-bar" alt="Custom Health Bar">
+                    <div class="health-bar" id="player1-health"></div>
+                </div>
+                <h2>You</h2>
+                <div class="character-container">
+                    <img src="../media/hero.gif" alt="Player 1 Character">
+                    <img src="../media/damageGif.gif" id="player1-damage" class="damage-animation" style="display:none;"
+                        alt="Player 1 Damage">
+                </div>
+                <div class="attack" id="player1-attack">
+                    <img id="player1-attack-img" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game">
+            <h1>⬇Pick your attack⬇</h1>
+            <div class="options">
+                <button onclick="playerChoice('rock')"><img id="rockIkon" src="../media/rock.gif" alt="Rock"></button>
+                <button onclick="playerChoice('paper')"><img id="rockIkon" src="../media/paper.gif"
+                        alt="Paper"></button>
+                <button onclick="playerChoice('scissors')"><img id="rockIkon" src="../media/scissors.gif"
+                        alt="Scissors"></button>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+        <div class="player" id="player2">
+            <div class="player2">
+                <img src="../media/healthbar.png" class="custom-health-bar2" alt="Custom Health Bar">
+                <div class="health-bar" id="player2-health"></div>
+                <h2>Enemy</h2>
+                <div class="character-container">
+                    <img src="../media/spillet.gif" alt="Player 2 Character"">
+                    <img src=" ../media/damageGif.gif" id="player2-damage" class="damage-animation"
+                        style="display:none;" alt="Player 2 Damage">
+                </div>
+                <div class="attack" id="player2-attack">
+                    <img id="player2-attack-img" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <video id="death-video"> <!-- Hide the video initially -->
+        <source class="youDiedScreen" src="../media/youDied.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video id="win-video"> <!-- Hide the video initially -->
+        <source class="youWonScreen" src="../media/youWon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script src="../javascript/combat.js"></script>
+</body>
+
+</html>
